@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ObsWssControl</string>
+    <string name="landing_title_lead">OBS WSS Control</string>
+    <string name="landing_title_sub">The poor man\'s stream-deck, OSS Flavoured</string>
+    <string name="landing_title_gag">May contain nuts.</string>
+    <string name="landing_title_nuts">DEEZ nuts, hah, goteem</string>
+    <string name="landing_button_setup">Setup</string>
+    <string name="landing_button_sceneList">Scene List</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

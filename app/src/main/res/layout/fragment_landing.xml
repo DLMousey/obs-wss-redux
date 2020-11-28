@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.LandingFragment"
+    android:background="@color/primary">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/landing_title_lead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:text="@string/landing_title_lead"
+        android:textAlignment="center"
+        android:textColor="@color/primary_text"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/landing_title_sub"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/landing_title_sub"
+        android:textSize="18sp"
+        android:textColor="@color/primary_text"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/landing_title_lead" />
+
+    <TextView
+        android:id="@+id/landing_title_gag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/landing_title_gag"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@color/secondary"
+        android:clickable="true"
+        app:layout_constraintTop_toBottomOf="@+id/landing_title_sub" />
+
+    <TextView
+        android:id="@+id/landing_title_nuts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/landing_title_nuts"
+        android:textAlignment="center"
+        android:textColor="@color/secondary_light"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/landing_title_gag" />
+
+    <LinearLayout
+        android:id="@+id/landing_container_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/landing_title_gag">
+
+        <Button
+            android:id="@+id/landing_button_setup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:text="@string/landing_button_setup" />
+
+        <Button
+            android:id="@+id/landing_button_scenes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:text="@string/landing_button_sceneList" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

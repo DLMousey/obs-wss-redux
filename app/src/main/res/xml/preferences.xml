@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditTextPreference
+        app:key="setup_edittext_host"
+        app:title="OBS Host"
+        app:summary="The machine running OBS, accessible on the network"
+        app:defaultValue="192.168.1.1" />
+
+    <EditTextPreference
+        app:key="setup_edittext_port"
+        app:title="WSS Port"
+        app:summary="The port exposed by the WSS plugin"
+        app:defaultValue="4444" />
+
+    <CheckBoxPreference
+        app:key="setup_checkbox_authentication"
+        app:title="Authentication"
+        app:summary="If authentication is required, check this"
+        app:defaultValue="false" />
+
+    <EditTextPreference
+        app:key="setup_edittext_password"
+        app:title="Password"
+        app:summary="Password for WSS authentication" />
+
+    <Preference
+        app:key="setup_button_test"
+        app:title="Test configuration"
+        app:summary="Test your configuration to make sure it works" />
+
+</PreferenceScreen>
