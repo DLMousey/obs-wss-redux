@@ -20,6 +20,11 @@ class ObsSceneList {
         @JvmStatic
         fun fromJsonObject(jsonObject: JsonObject): ObsSceneList {
             val sceneList: ObsSceneList = ObsSceneList()
+
+            if (jsonObject.get("current-scene") == null) {
+                return sceneList
+            }
+
             sceneList.currentScene = jsonObject.get("current-scene").asString
             sceneList.messageId = jsonObject.get("message-id").asString
             sceneList.scenes = ArrayList()

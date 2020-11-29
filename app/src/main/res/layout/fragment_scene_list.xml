@@ -5,10 +5,16 @@
     android:layout_height="match_parent"
     tools:context=".fragments.SceneListFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
+        android:id="@+id/sceneList_scrollView_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Scene List Fragment" />
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/sceneList_linearLayout_scenes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </ScrollView>
 
 </FrameLayout>

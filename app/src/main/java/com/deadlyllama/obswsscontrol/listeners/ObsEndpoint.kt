@@ -27,11 +27,6 @@ class ObsEndpoint : WebSocketListener {
     override fun onOpen(webSocket: WebSocket, response: Response) {
         Log.d(TAG, "onOpen: fired")
         Log.d(TAG, "onOpen: connection established")
-
-        val message: Message = handler.obtainMessage()
-        message.what = 0
-        message.obj = "Connection established successfully"
-        handler.sendMessage(message)
     }
 
     override fun onMessage(webSocket: WebSocket, bytes: ByteString) {
